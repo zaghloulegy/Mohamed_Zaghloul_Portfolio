@@ -59,18 +59,20 @@ li {
     text-decoration: none;
     flex-direction: column;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 1000;
 
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        color: var(--secondary-color);
+        color: #DAA520;
+        font-weight: 1000;
     }
     }
 
     &:hover {
     div {
         background: var(--secondary-color);
+        
     }
     }
 }
