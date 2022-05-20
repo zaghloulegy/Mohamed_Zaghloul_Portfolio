@@ -41,7 +41,7 @@ list-style: none;
 
 li {
     margin: 0 1rem;
-    cursor: pointer;
+    cursor: default;
 
     flex-direction: column;
 
@@ -71,7 +71,7 @@ li {
 
     &:hover {
     div {
-        background: var(--secondary-color);
+        // background: #DAA520;
         
     }
     }
