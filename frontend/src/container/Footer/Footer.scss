@@ -87,11 +87,12 @@
       padding: 0.95rem;
       border: none;
       border-radius: 7px;
-      background-color: var(--primary-color);
+      background-color: white;
       border-style: solid;
       font-family: var(--font-base);
-      color: rgb(255, 208, 208);
+      color: #2430af;
       outline: none;
+      opacity: 50%;
     }
 
     textarea {
