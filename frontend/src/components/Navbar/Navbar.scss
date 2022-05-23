@@ -18,12 +18,12 @@ z-index: 2;
 .app__navbar-logo {
 display: flex;
 justify-content: flex-start;
-align-items: center;
-
+align-items: left;
+margin-left: -2rem;
 img {
-    width: 90px;
-    height: 20px;
-
+    width: 200px;
+    height: 30px;
+    
     @media screen and (min-width: 2000px) {
     width: 180px;
     height: 40px;
@@ -36,7 +36,7 @@ flex: 1;
 display: flex;
 justify-content: center;
 align-items: center;
-
+margin-left: -10rem; 
 list-style: none;
 
 li {
