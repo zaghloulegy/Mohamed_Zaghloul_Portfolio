@@ -124,12 +124,12 @@ div {
     svg {
     width: 15px;
     height: 15px;
-    color: var(--gray-color);
+    color: black;
     }
 
     &:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: black;
+    border-color: black;
 
     svg {
         color: var(--white-color);
