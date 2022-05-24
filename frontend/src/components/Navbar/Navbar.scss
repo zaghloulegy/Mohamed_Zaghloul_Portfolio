@@ -21,8 +21,8 @@ justify-content: flex-start;
 align-items: left;
 margin-left: -2rem;
 img {
-    width: 200px;
-    height: 30px;
+    width: auto;
+    height: 50px;
     
     @media screen and (min-width: 2000px) {
     width: 180px;
