@@ -1,40 +1,110 @@
-.app__footer {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
 
-  @media screen and (max-width: 768px) {
+
+form {
+    display: flex;
+    align-items: flex-start;
     flex-direction: column;
-  }
+    width: 100%;
+    font-size: 16px;
+    position: center;
+    
+    
+    input {
+      width: 100%;
+      height: 50px;
+      padding: 7px;
+      outline: none;
+      border-style: solid;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 3px solid rgb(0, 79, 226);
+      &:focus {
+        border: 2px solid rgb(69, 16, 112);
+      }
+    }
+    textarea {
+      max-width: 100%;
+      min-width: 100%;
+      width: 100%;
+      max-height: 150px;
+      min-height: 200px;
+      padding: 5px;
+      outline: none;
+      border-radius: 5px;
+      border: 3px solid rgb(0, 79, 226);
+      
+      &:focus {
+        border: 2px solid rgb(69, 16, 112);
+      }
+    }
+    label {
+      margin-top: 1rem;
+    }
+    input[type="submit"] {
+      margin-top: 2rem;
+      cursor: pointer;
+      max-width: 50%;
+      position: center;
+      margin-left: 25%;
+      background: rgb(0, 79, 226);
+      color: white;
+      border: none;
+      border-radius: 50px;
+    }
+
+    .message:hover {
+      
+        
+        background-color: rgb(69, 16, 112);
+      
+    }
 }
 
-.app__footer-cards {
-  width: 60%;
+.copyright {
+width: 100%;
+padding: 2rem 0 0 0;
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+
+p {
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+}
+
+
+
+  .app__footer-cards {
+  width: 75%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4em 2rem 2rem;
-
+  margin: 1rem;
+  
   .app__footer-card {
-    min-width: 290px;
+    min-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
+    
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fef4f5;
+   
 
     transition: all 0.3s ease-in-out;
-
-    img {
+  }
+  img {
       width: 40px;
       height: 40px;
-      margin: 0 0.7rem;
+      margin: 1rem 2rem 1rem;
+      
     }
 
     p {
@@ -47,85 +117,16 @@
     &:hover {
       box-shadow: 0 0 25px #fef4f5;
     }
-
-    @media screen and (max-width: 450px) {
-      width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-}
-
-.app__footer-cards .app__footer-card:last-child {
-  background-color: #f2f7fb;
-}
-
-.app__footer-cards .app__footer-card:last-child:hover {
-  box-shadow: 0 0 25px #f2f7fb;
-}
-
-.app__footer-form {
-  width: 60%;
-  flex-direction: column;
-  margin: 1rem 2rem;
-
-  div {
-    width: 100%;
-
-    margin: 0.75rem 0;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-
-    transition: all 0.3s ease-in-out;
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 0.95rem;
-      border: none;
-      border-radius: 7px;
-      background-color: white;
-      border-style: solid;
-      font-family: var(--font-base);
-      color: #2430af;
-      outline: none;
-      opacity: 50%;
-    }
-
-    textarea {
-      height: 170px;
-    }
-
-    &:hover {
-      box-shadow: 0 0 25px var(--primary-color);
-    }
-  }
-
-  button {
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--secondary-color);
-
-    font-weight: 500;
-    color: var(--white-color);
-    outline: none;
-    margin: 2rem 0 0 0;
-    font-family: var(--font-base);
-
-    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    cursor: pointer;
-
-    &:hover {
-      background-color: #2430af;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
     width: 100%;
     margin: 1rem 0;
   }
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+
+      @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
 }

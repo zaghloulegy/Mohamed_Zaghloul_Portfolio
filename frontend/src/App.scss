@@ -36,20 +36,7 @@ padding: 4rem 2rem;
 }
 }
 
-.copyright {
-width: 100%;
-padding: 2rem 0 0;
 
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: flex-end;
-
-p {
-    text-transform: uppercase;
-    color: var(--black-color);
-}
-}
 
 .head-text {
 font-size: 2.75rem;
@@ -124,12 +111,12 @@ div {
     svg {
     width: 15px;
     height: 15px;
-    color: black;
+    color: #000080;
     }
 
     &:hover {
-    background-color: black;
-    border-color: black;
+    background-color: #000080;
+    border-color: #000080;
 
     svg {
         color: var(--white-color);
